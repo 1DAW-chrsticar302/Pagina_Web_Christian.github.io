@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi formulario</title>
 </head>
 <style>
     .izquierda{
@@ -21,7 +21,14 @@
         background-color: bisque;
         overflow: auto;
         width: 100%;
-        height: 100px;
+        height: 180px;
+        float: left;
+    }
+    .container2 {
+        background-color: rgb(152, 199, 249);
+        overflow: auto;
+        width: 100%;
+        height: 60px;
         float: left;
     }
     .antes{
@@ -41,6 +48,10 @@
         float: left;
         width: 30%;
     }
+    .div {
+        float: left;
+        width: 50%;
+    }
 </style>
 <body>
     <div class="antes">&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
@@ -49,7 +60,7 @@
         <hr>
         <form action="mailto=ccaraba2502@g.educaand.es" method="post" enctype="text/plain">
             <center><h1> FORMULARIO</h1></center>
-            <br><br>
+            <br>
             <hr>
             <h2> DATOS PERSONALES</h2>
             <hr>
@@ -91,42 +102,93 @@
             <h2> DATOS ACADÉMICOS</h2>
             <hr>
             <div class="container">
-                <label for="datos_academicos">Dime tus datos académicos:</label><br>
-                <textarea name="datos_academicos" id="datos_academicos" raws="7" cols="30"></textarea>
+                <label for="academ">Elija su nivel académico (incluye todos los que tenga):</label><br>
+                <input type="checkbox" name="ed_prim" id="ed_prim">
+                <label for="">Educación Primaria</label><br>
+                <input type="checkbox" name="frances" id="frances">
+                <label for="">ESO</label><br>
+                <input type="checkbox" name="espanyol" id="espanyol">
+                <label for="">Bachillerato</label><br>
+                <input type="checkbox" name="espanyol" id="espanyol">
+                <label for="">CFGM</label><br>
+                <input type="checkbox" name="espanyol" id="espanyol">
+                <label for="">CFGS</label><br>
+                <input type="checkbox" name="espanyol" id="espanyol">
+                <label for="">Educación	universitaria</label><br>
+                <input type="checkbox" name="espanyol" id="espanyol">
+                <label for="">Master postgrado</label><br>
+                <br>
             </div>
             
-            <br><br><br><br><br>
+            <br><br><br><br><br><br>
             <hr>
             <h2> EXPERIENCIA PROFESIONAL</h2>
             <hr>
-            <div class="container">
+            <div class="container2">
+                <br>
                 <label for="exp_prof">Indique su experiencia laboral:</label>
                 <select name="exp_prof" id="exp_prof">
-                    <option value="">No he tenido ningún trabajo</option>
-                    <option value="">He tenido uno o dos trabajos</option>
-                    <option value="">Múltiples trabajos</option>
+                    <option value="empresa">En una empresa</option>
+                    <option value="voluntaria">Voluntaria</option>
+                    <option value="autonoma">Autónoma</option>
+                    <option value="público">En el sector público</option>
+                    <option value="privado">En el sector privado</option>
                 </select>
                 <br>
-                <label for="exp_concreta">En caso de haber tenido trabajo, indique concretamente donde y cuál:</label>
-                <br>
-                <textarea name="exp_concreta" id="exp_concreta" raws="7" cols="30"></textarea>
+                
             </div>
             
-            <br><br><br><br><br>
+            <br><br><br>
             <hr>
             <h2> IDIOMAS</h2>
             <hr>
+            
+            <div class="div">
+                <table border="1">
+                    <tr>
+                        <td align="center">IDIOMA</td>
+                        <td align="center">SI/NO</td>
+                        <td colspan="3" align="center">NIVEL</td>
+                        
+                    </tr>
+                    <tr>
+                        <td align="center">Español</td>
+                        <td align="center"><input type="checkbox" name="espanyol" id="espanyol"></td>
+                        <td colspan="3" align="center">
+                            <input type="radio" name="nivel_espanyol" id="nivel_espanyol"><label for="alto">Alto</label>
+                            <input type="radio" name="nivel_espanyol" id="nivel_espanyol"><label for="medio">Medio</label>
+                            <input type="radio" name="nivel_espanyol" id="nivel_espanyol"><label for="bajo">Bajo</label>
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <td align="center">Inglés</td>
+                        <td align="center"><input type="checkbox" name="ingles" id="ingles"></td>
+                        <td colspan="3" align="center">
+                            <input type="radio" name="nivel_ingles" id="nivel_ingles"><label for="alto">Alto</label>
+                            <input type="radio" name="nivel_ingles" id="nivel_ingles"><label for="medio">Medio</label>
+                            <input type="radio" name="nivel_ingles" id="nivel_ingles"><label for="bajo">Bajo</label>
+                        </td>
     
-            <label for="idioma">Selecciona el/los idioma/s:</label>
-            <input type="checkbox" name="ingles" id="ingles">
-            <label for="">Inglés</label><br>
-            <input type="checkbox" name="frances" id="frances">
-            <label for="">Francés</label><br>
-            <input type="checkbox" name="espanyol" id="espanyol">
-            <label for="">Español</label><br>
-            <input type="checkbox" name="otro" id="otro">
-            <label for="">Otro | <textarea name="otro" id="otro" raws="1" cols="20"></textarea></label>
-            <br>
+                    </tr>
+                    <tr>
+                        <td align="center">Francés</td>
+                        <td align="center"><input type="checkbox" name="frances" id="frances"></td>
+                        <td colspan="3" align="center">
+                            <input type="radio" name="nivel_frances" id="nivel_frances" value="alto"><label for="alto">Alto</label>
+                            <input type="radio" name="nivel_frances" id="nivel_frances" value="medio"><label for="medio">Medio</label>
+                            <input type="radio" name="nivel_frances" id="nivel_frances" value="bajo"><label for="bajo">Bajo</label>
+                        </td>
+    
+                    </tr>
+                </table>
+            </div>
+
+            <div class="div">
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar todo">
+            </div>
+            
         </form>
     </div>
 
