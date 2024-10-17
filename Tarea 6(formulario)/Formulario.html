@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .izquierda{
+        background-color: aquamarine;
+        overflow: auto;
+        float: left;
+        width: 100%;
+    }
+    .derecha{
+        background-color: bisque;
+        overflow: auto;
+        float: right;
+    }
+    .container {
+        background-color: bisque;
+        overflow: auto;
+        width: 100%;
+        height: 100px;
+        float: left;
+    }
+    .antes{
+        background-color: rgb(160, 216, 108);
+        overflow: auto;
+        float: left;
+        width: 20%;
+    }
+    .todo{
+        overflow: auto;
+        float: left;
+        width: 50%;
+    }
+    .nada{
+        background-color: rgb(160, 216, 108);
+        overflow: auto;
+        float: left;
+        width: 30%;
+    }
+</style>
+<body>
+    <div class="antes">&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+    <div class="todo">
+        <hr>
+        <form action="mailto=ccaraba2502@g.educaand.es" method="post" enctype="text/plain">
+            <center><h1> FORMULARIO</h1></center>
+            <br><br>
+            <hr>
+            <h2> DATOS PERSONALES</h2>
+            <hr>
+            <div class="izquierda">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" size="25" maxlength="20">
+                        </td>
+                        <td>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" size="42" maxlength="40">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tlf">Teléfono:</label>
+                            <input type="text" id="tlf" name="tlf" size="11" maxlength="9">
+                        </td>
+                        <td>
+                            <label for="direccion">Dirección</label>
+                            <input type="text" id="direccion" name="direccion" size="35" maxlength="30">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <label for="foto">Elige una foto tuya:</label>
+                <br>
+                <table border="1">
+                    <tr>
+                        <td><input type="file" id="foto" name="foto"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <br><br><br><br><br><br><br>
+            <hr>
+            <h2> DATOS ACADÉMICOS</h2>
+            <hr>
+            <div class="container">
+                <label for="datos_academicos">Dime tus datos académicos:</label><br>
+                <textarea name="datos_academicos" id="datos_academicos" raws="7" cols="30"></textarea>
+            </div>
+            
+            <br><br><br><br><br>
+            <hr>
+            <h2> EXPERIENCIA PROFESIONAL</h2>
+            <hr>
+            <div class="container">
+                <label for="exp_prof">Indique su experiencia laboral:</label>
+                <select name="exp_prof" id="exp_prof">
+                    <option value="">No he tenido ningún trabajo</option>
+                    <option value="">He tenido uno o dos trabajos</option>
+                    <option value="">Múltiples trabajos</option>
+                </select>
+                <br>
+                <label for="exp_concreta">En caso de haber tenido trabajo, indique concretamente donde y cuál:</label>
+                <br>
+                <textarea name="exp_concreta" id="exp_concreta" raws="7" cols="30"></textarea>
+            </div>
+            
+            <br><br><br><br><br>
+            <hr>
+            <h2> IDIOMAS</h2>
+            <hr>
+    
+            <label for="idioma">Selecciona el/los idioma/s:</label>
+            <input type="checkbox" name="ingles" id="ingles">
+            <label for="">Inglés</label><br>
+            <input type="checkbox" name="frances" id="frances">
+            <label for="">Francés</label><br>
+            <input type="checkbox" name="espanyol" id="espanyol">
+            <label for="">Español</label><br>
+            <input type="checkbox" name="otro" id="otro">
+            <label for="">Otro | <textarea name="otro" id="otro" raws="1" cols="20"></textarea></label>
+            <br>
+        </form>
+    </div>
+
+    <div class="nada">&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+</body>
+</html>
